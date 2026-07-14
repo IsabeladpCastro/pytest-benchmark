@@ -22,4 +22,5 @@ include CONTRIBUTING.rst
 include LICENSE
 include README.rst
 
-global-exclude .py[cod] _pycache_/ *.so *.dylib
+global-exclude .py[cod] pycache *.so *.dylib
+include *.svg
