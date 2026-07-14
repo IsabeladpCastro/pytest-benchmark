@@ -17,11 +17,11 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          python -m pip install -e .
-          python -m pip install pytest pytest-cov nbmake freezegun virtualenv pygal pygaljs
+	- name: Install dependencies
+  	run: |
+    		python -m pip install --upgrade pip
+    		python -m pip install -e ".[aspect]"
+    		python -m pip install pytest pytest-cov nbmake freezegun virtualenv pygal pygaljs
 
       - name: Run tests with coverage
         run: |
