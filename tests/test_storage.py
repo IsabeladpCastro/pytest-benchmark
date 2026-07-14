@@ -33,7 +33,7 @@ STORAGE = THIS.with_suffix('')
 JSON_DATA = json.loads(next(STORAGE.glob('0030_*.json')).read_text(encoding='utf8'))
 JSON_DATA['machine_info'] = {'foo': 'bar'}
 JSON_DATA['commit_info'] = {'foo': 'bar'}
-list(normalize_stats(bench['stats']) for bench in JSON_DATA['benchmarks'])
+[normalize_stats(bench['stats']) for bench in JSON_DATA['benchmarks']]
 
 
 class Namespace:
