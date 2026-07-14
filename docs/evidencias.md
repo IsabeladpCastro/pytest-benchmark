@@ -951,3 +951,15 @@ htmlcov/index.html
 
 
 A cobertura foi gerada usando pytest-cov.
+
+## GitHub Actions
+
+Foi configurada uma pipeline no GitHub Actions para executar automaticamente:
+
+- instalação das dependências;
+- testes com pytest;
+- geração de cobertura em XML.
+
+Arquivo configurado:
+
+- `.github/workflows/tests.yml`
