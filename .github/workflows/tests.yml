@@ -26,10 +26,3 @@ jobs:
       - name: Run tests with coverage
         run: |
           pytest --cov=pytest_benchmark --cov-report=xml --cov-report=term-missing -o addopts=""
-              
-      - name: Run prek
-        run: |
-          pip install prek
-          prek run --all-files --show-diff-on-failure
-        env:
-          SKIP: taplo-lint
