@@ -38,7 +38,7 @@ O projeto escolhido foi o pytest-benchmark, um plugin para pytest usado para med
 
 
 
-Comando executado:
+Commando executado:
 
 
 
@@ -66,7 +66,7 @@ testpaths: tests
 
 plugins: nbmake-1.5.5, benchmark-5.2.3, cov-7.1.0
 
-collected 237 items / 1 skipped                                                                                         
+collected 237 items / 1 skipped
 
 
 
@@ -112,7 +112,7 @@ request = <SubRequest 'benchmark' for <TestCaseFunction test\_foo2>>
 
 &#x20;       bs: BenchmarkSession = request.config.\_benchmarksession
 
-&#x20;   
+&#x20;
 
 &#x20;       if bs.skip:
 
@@ -152,15 +152,15 @@ request = <SubRequest 'benchmark' for <TestCaseFunction test\_foo2>>
 
 
 
-src\\pytest\_benchmark\\plugin.py:485: 
+src\\pytest\_benchmark\\plugin.py:485:
 
-\_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ 
+\_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_
 
 src\\pytest\_benchmark\\fixture.py:353: in \_cleanup
 
 &#x20;   self.\_logger.warning('Benchmark fixture was not used at all in this test!', warner=self.\_warner, suspend=True)
 
-\_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ 
+\_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_
 
 
 
@@ -220,7 +220,7 @@ request = <SubRequest 'benchmark' for <Function test\_weave\_fixture>>
 
 &#x20;       bs: BenchmarkSession = request.config.\_benchmarksession
 
-&#x20;   
+&#x20;
 
 &#x20;       if bs.skip:
 
@@ -260,15 +260,15 @@ request = <SubRequest 'benchmark' for <Function test\_weave\_fixture>>
 
 
 
-src\\pytest\_benchmark\\plugin.py:485: 
+src\\pytest\_benchmark\\plugin.py:485:
 
-\_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ 
+\_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_
 
 src\\pytest\_benchmark\\fixture.py:353: in \_cleanup
 
 &#x20;   self.\_logger.warning('Benchmark fixture was not used at all in this test!', warner=self.\_warner, suspend=True)
 
-\_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ 
+\_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_
 
 
 
@@ -328,7 +328,7 @@ request = <SubRequest 'benchmark' for <Function test\_weave\_method>>
 
 &#x20;       bs: BenchmarkSession = request.config.\_benchmarksession
 
-&#x20;   
+&#x20;
 
 &#x20;       if bs.skip:
 
@@ -368,15 +368,15 @@ request = <SubRequest 'benchmark' for <Function test\_weave\_method>>
 
 
 
-src\\pytest\_benchmark\\plugin.py:485: 
+src\\pytest\_benchmark\\plugin.py:485:
 
-\_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ 
+\_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_
 
 src\\pytest\_benchmark\\fixture.py:353: in \_cleanup
 
 &#x20;   self.\_logger.warning('Benchmark fixture was not used at all in this test!', warner=self.\_warner, suspend=True)
 
-\_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ 
+\_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_
 
 
 
@@ -564,9 +564,9 @@ self = <test\_with\_testcase.TerribleTerribleWayToWritePatchTests testMethod=tes
 
 
 
-tests\\test\_with\_testcase.py:22: 
+tests\\test\_with\_testcase.py:22:
 
-\_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ 
+\_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_
 
 src\\pytest\_benchmark\\fixture.py:334: in weave
 
@@ -586,7 +586,7 @@ src\\pytest\_benchmark\\fixture.py:334: in weave
 
 &#x20;   ???
 
-\_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ 
+\_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_
 
 
 
@@ -636,9 +636,9 @@ benchmark\_weave = <bound method BenchmarkFixture.weave of <pytest\_benchmark.fi
 
 
 
-tests\\test\_with\_weaver.py:19: 
+tests\\test\_with\_weaver.py:19:
 
-\_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ 
+\_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_
 
 src\\pytest\_benchmark\\fixture.py:334: in weave
 
@@ -658,7 +658,7 @@ src\\pytest\_benchmark\\fixture.py:334: in weave
 
 &#x20;   ???
 
-\_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ 
+\_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_
 
 
 
@@ -708,9 +708,9 @@ benchmark = <pytest\_benchmark.fixture.BenchmarkFixture object at 0x00000225F745
 
 
 
-tests\\test\_with\_weaver.py:26: 
+tests\\test\_with\_weaver.py:26:
 
-\_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ 
+\_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_
 
 src\\pytest\_benchmark\\fixture.py:334: in weave
 
@@ -730,7 +730,7 @@ src\\pytest\_benchmark\\fixture.py:334: in weave
 
 &#x20;   ???
 
-\_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ 
+\_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_
 
 
 
@@ -926,7 +926,7 @@ ERROR tests/test\_with\_weaver.py::test\_weave\_method - pytest\_benchmark.logge
 
 
 
-Comando executado:
+Commando executado:
 
 
 
@@ -951,4 +951,3 @@ htmlcov/index.html
 
 
 A cobertura foi gerada usando pytest-cov.
-
