@@ -1,3 +1,5 @@
 [formatting]
 array_auto_collapse = false
 indent_string = "    "
+
+skip_schema_resolution = true
