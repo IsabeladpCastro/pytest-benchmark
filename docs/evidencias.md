@@ -920,3 +920,35 @@ ERROR tests/test\_with\_weaver.py::test\_weave\_method - pytest\_benchmark.logge
 
 =========================== 4 failed, 215 passed, 19 skipped, 3 errors in 921.18s (0:15:21) ============================
 
+
+
+\## Cobertura de código
+
+
+
+Comando executado:
+
+
+
+```bash
+
+pytest --cov=pytest\_benchmark --cov-report=term-missing --cov-report=html --cov-report=xml -o addopts=""
+
+
+
+\## Resultado:
+
+
+
+Arquivos gerados:
+
+
+
+coverage.xml
+
+htmlcov/index.html
+
+
+
+A cobertura foi gerada usando pytest-cov.
+
