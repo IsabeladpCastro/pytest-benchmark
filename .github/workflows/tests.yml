@@ -28,6 +28,8 @@ jobs:
           pytest --cov=pytest_benchmark --cov-report=xml --cov-report=term-missing -o addopts=""
               
       - name: Run prek
-        run: prek run --all-files --show-diff-on-failure
+        run: |
+          pip install prek
+          prek run --all-files --show-diff-on-failure
         env:
           SKIP: taplo-lint
