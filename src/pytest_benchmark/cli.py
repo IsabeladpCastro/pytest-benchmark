@@ -223,6 +223,9 @@ class TerminalReporter:
         self._tw = TerminalWriter()
 
     def ensure_newline(self):
+        # This method is intentionally empty because TerminalReporter is a
+        # lightweight adapter used by the benchmark CLI. The underlying
+        # TerminalWriter already handles line breaks when writing output.
         pass
 
     def write(self, content, **markup):
