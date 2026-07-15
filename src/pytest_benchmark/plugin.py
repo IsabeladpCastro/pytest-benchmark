@@ -347,32 +347,38 @@ def pytest_collection_modifyitems(config, items):
                 item.add_marker(skip_other)
 
 
+def _get_grouping_key(bench, grouping, group_by_original):
+    """Função auxiliar para reduzir a complexidade cognitiva da extração de chaves."""
+    if grouping == 'group':
+        return bench['group']
+    elif grouping == 'name':
+        return bench['name']
+    elif grouping == 'func':
+        return bench['name'].split('[')[0]
+    elif grouping == 'fullname':
+        return bench['fullname']
+    elif grouping == 'fullfunc':
+        return bench['fullname'].split('[')[0]
+    elif grouping == 'param':
+        return bench['param']
+    elif grouping.startswith('param:'):
+        param_name = grouping[len('param:') :]
+        return '{}={}'.format(param_name, bench['params'][param_name])
+    else:
+        raise NotImplementedError(f'Unsupported grouping {group_by_original!r}.')
+
 def pytest_benchmark_group_stats(config, benchmarks, group_by):
     groups = defaultdict(list)
+    groupings = group_by.split(',')
+    
     for bench in benchmarks:
-        key = ()
-        for grouping in group_by.split(','):
-            if grouping == 'group':
-                key += (bench['group'],)
-            elif grouping == 'name':
-                key += (bench['name'],)
-            elif grouping == 'func':
-                key += (bench['name'].split('[')[0],)
-            elif grouping == 'fullname':
-                key += (bench['fullname'],)
-            elif grouping == 'fullfunc':
-                key += (bench['fullname'].split('[')[0],)
-            elif grouping == 'param':
-                key += (bench['param'],)
-            elif grouping.startswith('param:'):
-                param_name = grouping[len('param:') :]
-                key += ('{}={}'.format(param_name, bench['params'][param_name]),)
-            else:
-                raise NotImplementedError(f'Unsupported grouping {group_by!r}.')
+        # A complexidade foi reduzida movendo as condições para _get_grouping_key
+        key = tuple(_get_grouping_key(bench, g, group_by) for g in groupings)
         groups[' '.join(str(p) for p in key if p) or None].append(bench)
 
     for grouped_benchmarks in groups.values():
         grouped_benchmarks.sort(key=operator.itemgetter('fullname' if 'full' in group_by else 'name'))
+    
     return sorted(groups.items(), key=lambda pair: pair[0] or '')
 
 
